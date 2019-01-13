@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/*搴曢儴鍖哄煙*/
+#footer{
+    width: 100%;
+    height:330px;
+    background-color: #080808;
+}
+#footer .footerbox{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.foottop ul{
+    padding: 20px 0;
+    height: 50px;
+}
+.foottop ul li{
+    float: left;
+    width:33%;
+    text-align: center;
+}
+.foottop ul li:first-child{
+    padding:0 200px 0 0px;
+    box-sizing:border-box;
+}
+.foottop ul li:last-child{
+    padding:0 20px 0 200px;
+    box-sizing:border-box;
+}
+.foottop ul li p{
+    font-size: 20px;
+    color: #fff;
+}
+.foottop ul li span{
+    font-size: 14px;
+    color: #c70000;
+}
+.footcon{
+    height: 200px;
+}
+.footleft{
+    float: left;
+    width: 66%;
+    margin-right: 50px;
+}
+.footright{
+    float: right;
+}
+.footright>img{
+    width: 130px;
+    height: 130px;
+}
+.footleft>ul{
+    height: 30px;
+    border-bottom: 1px solid #373737;
+}
+.footleft>ul>li{
+    width: 70px;
+    height: 30px;
+    float: left;
+    color: #fff;
+    margin-right: 110px;
+    font-size:16px;
+}
+.footleft>ul>li:last-child{
+    margin-right: 0;
+}
+.footleft>ul>li ul{
+    position: relative;
+    top: 8px;
+}
+.footleft>ul>li ul li{
+    width: 112px;
+    font-size: 14px;
+    margin:8px 0;
+}
+.footleft>ul>li ul li a{
+    color: #666;
+}
+.footright .contact{
+    float: right;
+}
+.footright p,.footright span{
+    display: block;
+    text-align: right;
+}
+.footright p{
+    font-size: 20px;
+    color: #fff;
+}
+.footright .contact{
+    margin-left: 38px;
+}
+.contact span.time{
+    font-size: 14px;
+    color: #666;
+}
+.contact span.tel{
+    font-size: 20px;
+    color: #c70000;
+    margin-top: 12px;
+}
+.footerbox .copyright{
+    color: #1c1c1c;
+    text-align: center;
+    margin: 12px 0;
+    font-size: 12px;
+}
+.copyright p a{
+    color:#1c1c1c;
+}
+.copyright p a:hover{
+    color:#c70000;
+}

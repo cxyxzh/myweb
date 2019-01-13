@@ -1,0 +1,565 @@
+@charset "UTF-8";
+/*澶撮儴鍖哄煙*/
+#header{
+    width: 100%;
+    height: 36px;
+    background-color: #d8d8d8;
+}
+.headerbox{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.header_left{
+    float: left;
+}
+.header_right{
+    float: right;
+}
+.header_left ul li,.header_right ul li{
+    font-size: 12px;
+    height: 36px;
+    line-height: 36px;
+}
+.header_left ul li a{
+    font-size: 12px;
+    height: 36px;
+    line-height: 36px;
+    color: #666;
+}
+.header_left ul li:first-child a{
+    margin-left:8px;
+}
+.header_left ul li{
+    float: left;
+    margin-right: 12px;
+}
+.header_right ul li{
+    float: left;
+    margin-left: 12px;
+}
+.header_right ul li a{
+    font-size: 12px;
+    height: 36px;
+    line-height: 36px;
+    color: #666;
+}
+.header_right ul li a:hover{
+    color:#c70000;
+}
+.header_left .regi a{
+    color: #dd0000;
+}
+#logout:hover{
+    cursor:pointer;
+}
+.carticon{
+    padding-left: 16px;
+    background: url(../img/carticon.png) no-repeat left center;
+}
+
+.indexsearch{
+    width:726px!important;
+}
+.indexinp{
+    width:616px!important;
+}
+/*璐墿杞︿笅鎷�*/
+.mycart .cartitem{
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: -1px;
+    width: 316px;
+    background-color: #fff;
+    padding-left: 12px;
+    box-sizing: border-box;
+    z-index: 199;
+    box-shadow: 0 3px 4px #eaeaea;
+}
+.mycart .cartitem>p{
+    font-size: 12px;
+    color: #333;
+    text-align: left;
+    margin:10px 0;
+}
+.mycart .cartitem>p.allnum{
+    float: left;
+    margin-left: 10px;
+}
+.mycart .cartitem ul{
+    height: 300px;
+    overflow-y:auto;
+}
+.mycart .cartitem ul li{
+    height: 70px;
+    margin-bottom: 12px;
+}
+.mycart .cartitem ul li img{
+    width: 55px;
+    height: 70px;
+    float: left;
+}
+.mycart .cartitem ul li .itemtxt{
+    float: left;
+    margin-left: 6px ;
+}
+
+.mycart .cartitemnone img {
+    float: left;
+    width: 50px;
+    margin: 25px 0 25px 10px;
+}
+.mycart .cartitemnone {
+    height: 100px;
+}
+.mycart .cartitemnone span {
+    display: block;
+    color: #ccc;
+    height: 100px;
+    line-height: 100px;
+    font-size: 14px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.itemtxt span.shopdelete:hover{
+    color:#c70000;
+}
+.itemtxt span.shopdelete{
+    cursor: pointer;
+}
+.cartitem .gocart{
+    border:none;
+    outline: none;
+    float: right;
+    width: 92px;
+    height: 30px;
+    margin: 20px 24px 20px 0;
+    background-color: #e4393c;
+    color:#fff;
+    cursor: pointer;
+}
+.itemtxt p{
+    width: 220px;
+    font-size: 10px;
+    color: #666;
+    line-height: 20px;
+    text-align: left;
+    cursor: pointer;
+}
+.itemtxt p:hover{
+    color: #c70000;
+}
+.itemtxt span{
+    width: 72px;
+    display: inline-block;
+    position: relative;
+    bottom: 0;
+}
+.itemtxt span:first-of-type{
+    text-align: left;
+    font-size: 14px;
+    color: #e4393c;
+    font-family:Arial;
+}
+.itemtxt span:nth-of-type(2){
+    font-size: 12px;
+    color: #666;
+}
+.itemtxt span:nth-of-type(3){
+    font-size: 12px;
+    color: #333;
+}
+
+.pop{
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+}
+.pop span,.pop ul{
+    float: left;
+    color: #999;
+}
+.pop ul li{
+    float: left;
+    margin: 0 15px;
+}
+.pop ul li a{
+    cursor:pointer;
+    color: #999;
+}
+.pop ul li a:hover{
+    color: #c70000;
+}
+.popactive{
+    color: #c70000;
+}
+
+/*鍐呭鍖哄煙*/
+#content{
+    width: 100%;
+    background-color: #f5f5f5;
+}
+#content .contentbox{
+    width: 1200px;
+    margin: auto;
+
+}
+.search{
+    width: 100%;
+    height: 68px;
+    padding: 36px 0 20px;
+    margin-bottom: 30px;
+}
+.search .logo{
+    float: left;
+    width:210px;
+    height: 40px;
+    line-height: 40px;
+    padding-top: 10px;
+}
+.searchbox{
+    float: left;
+    margin: 0 25px;
+}
+.searchcon{
+    height: 40px;
+    /*width: 726px;*/
+    width:660px;
+}
+.indexsearch {
+    width: 726px!important;
+}
+.indexinp {
+    width: 616px!important;
+}
+.searchcon .searchtxt{
+    float: left;
+    /*width: 616px;*/
+    width:550px;
+    height: 40px;
+    border:none;
+    outline: none;
+    border:1px solid #c70000;
+    padding-left: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    color: #999;
+}
+.searchcon .searchbtn{
+    float: left;
+    width: 110px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #c70000;
+    border:none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.mycart{
+    position: relative;
+    float: right;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 16px;
+    border:1px solid #d8d8d8;
+}
+.mycart a{
+    color: #c70000;
+}
+.mycart>span{
+    position: absolute;
+    top: 4px;
+    right: 28px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #c20523;
+    font-size: 12px;
+    line-height: 16px;
+    color: #fff;
+}
+
+
+/*瀵艰埅*/
+.p_nav{
+    width: 100%;
+    height: 48px;
+    background-color: #f0793f;
+    margin-bottom: 30px;
+}
+.p_nav .p_navbox{
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.p_navbox span{
+    float: left;
+    height: 100%;
+    line-height: 48px;
+    font-size: 14px;
+    color: #fff;
+    width: 135px;
+}
+.p_navbox .navitem{
+    display: none;
+    position: absolute;
+    top: 48px;
+    left: -20px;
+    width: 940px;
+    z-index: 199;
+}
+.p_navbox .itemleft{
+    float: left;
+    background-color: #fff;
+    height: 310px;
+}
+.p_navbox .itemleft>ul>li{
+    width: 140px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 12px;
+
+}
+.p_navbox .itemleft>ul>li>a{
+    padding-left: 6px;
+    display: block;
+    color: #666;
+}
+.p_navbox .itemleft>ul>li>a.navred{
+    background-color: #c70000;
+    color: #fff;
+}
+/*itembox*/
+.p_navbox .itemleft .itembox{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 140px;
+    width: 180px;
+    z-index: 99;
+    background-color: #f4f4f4;
+    min-height: 310px;
+}
+.itembox ul li{
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+}
+.itembox ul li:hover{
+    background-color: #f9f9f9;
+}
+.itembox ul li a{
+    color: #333!important;
+}
+.itembox div{
+    height: 34px;
+    width: 100%;
+}
+.itembox div span{
+    width: 80px;
+    text-align: center;
+    line-height: 34px;
+    font-size: 12px;
+    color: #333;
+    font-weight: bold;
+}
+.itembox div ul{
+    height: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 34px;
+    border-bottom: 1px solid #eaeaea;
+}
+.itembox div ul li{
+    float: left;
+    font-size: 12px;
+    margin-right: 20px;
+}
+.itembox div ul li a{
+    color: #4a4a4a;
+}
+.itembox div ul li a:hover{
+    color: #c70000;
+}
+.p_navbox .itemright{
+    float: left;
+    height: 100%;
+}
+.p_navbox span i{
+    width: 20px;
+    height: 16px;
+    display: inline-block;
+    /*downicon.png*/
+    background: url(../img/carticon.png) no-repeat 2px 4px;
+}
+.p_navbox>ul{
+    float: left;
+}
+.p_navbox>ul>li{
+    float: left;
+    height: 48px;
+    line-height: 48px;
+    font-size: 14px;
+    margin-left: 36px;
+}
+.p_navbox ul li a{
+    color: #fff;
+}
+.p_navbox ul .navcheck a{
+    color: #c70000;
+}
+.p_navbox>ul li:hover a{
+    color: #c70000;
+}/*瀵艰埅*/
+.nav{
+    position: relative;
+    height: 40px;
+    width: 1200px;
+    margin: 0 auto 10px;
+}
+.nav>span{
+    float: left;
+    width: 206px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #c70000;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: #fff;
+}
+.nav i{
+    width: 24px;
+    height: 20px;
+    display: inline-block;
+    margin:0 10px;
+    vertical-align: middle;
+    /*kindsicon.png*/
+    background: url(../img/carticon.png) no-repeat center;
+}
+/*闅愯棌鏄剧ず鍟嗗搧鍒嗙被*/
+.nav .navitem{
+    display: none;
+    position: absolute;
+    height: 480px;
+    top: 40px;
+    left: 0px;
+    width: 940px;
+    z-index: 999;
+}
+.nav .itemleft{
+    float: left;
+    background-color: #a30111;
+    height: 100%;
+}
+.nav .itemleft>ul>li{
+    width: 206px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 12px;
+}
+.nav .itemleft>ul>li>a{
+    padding-left: 20px;
+    display: block;
+    color: #fff;
+}
+.nav .itemleft>ul>li>a.navred{
+    background-color: #fff;
+    color: #c70000;
+}
+/*itembox*/
+.nav .itemleft .itembox{
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    left: 206px;
+    width: 800px;
+    min-height: 480px;
+    background-color: #f4f4f4;
+}
+.itembox div{
+    height: 35px;
+    width: 100%;
+}
+.itembox div span{
+    float: left;
+    width: 80px;
+    text-align: center;
+    line-height: 34px;
+    font-size: 12px;
+    color: #333;
+    font-weight: bold;
+}
+.itembox div ul{
+    width: 730px;
+    height: 100%;
+    margin-left: 30px;
+    line-height: 34px;
+    border-bottom: 1px solid #eaeaea;
+}
+.itembox div ul li{
+    float: left;
+    font-size: 12px;
+    margin-right: 20px;
+}
+.itembox div ul li a{
+    color: #4a4a4a;
+}
+.itembox div ul li a:hover{
+    color: #c70000;
+}
+
+
+.nav>ul{
+    float: left;
+    padding-left: 15px;
+}
+.nav>ul>li{
+    float: left;
+    line-height: 40px;
+    font-size: 16px;
+    margin: 0 10px;
+}
+.nav>ul>li a{
+    color: #333;
+}
+.nav>ul>li a:hover{
+    color: #c70000;
+}
+.line{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    margin-top: -10px;
+    /*z-index: 199;*/
+    background-color: #c70000;
+}
+/*content*/
+.p_content{
+    width: 100%;
+    height: auto;
+}
+.p_contentbox{
+    width: 1200px;
+    margin: 0 auto;
+}
+.shopshow .shopbox{
+    float: left;
+    width: 950px;
+}
+.shopbox_left{
+    float: left;
+    width:405px;
+}
+.shopbox_left .shopimg{
+    width: 402px;
+    height: 388px;
+}

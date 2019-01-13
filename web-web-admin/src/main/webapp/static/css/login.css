@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+.login-box{width:350px; height:auto; min-height:360px; position:relative;}
+.login-source{width:100%; line-height:24px; text-align:center; margin-bottom:20px; font-size:14px; position:absolute; top:-34px; left:0; color:#ef3838;}
+.username-con{margin-top:40px;}
+.username-con, .password-con, .captcha-con{position:relative;}
+.username-con i, .password-con i{width:16px; height:19px; display:block; position:absolute; left:11px; background:url(../img/login-icon.png) no-repeat;}
+.username-con i{top:12px; background-position:-5px -7px;}
+.password-con i{top:11px; background-position:-5px -84px;}
+.login-box .login-input, .login-box .password-input, .login-box .captcha-input{width:100%; border:1px solid #b5b5b5; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box; line-height:40px; height:40px; border-radius:5px; -moz-border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px; color:#777; font-size:14px; margin-bottom:26px; text-indent:40px; box-shadow: inset 0 -1px rgba(34,25,25,.15),0 -1px rgba(255,255,255,.8); -moz-box-shadow: inset 0 -1px rgba(34,25,25,.15),0 -1px rgba(255,255,255,.8); -webkit-box-shadow: inset 0 -1px rgba(34,25,25,.15),0 -1px rgba(255,255,255,.8);}
+.login-box .login-input:focus{border:1px solid #7dabdf;}
+.login-box .password-input:focus{border:1px solid #7dabdf;}
+.login-box .captcha-input{width:60%; float:left;}
+.login-box .captcha-input:focus{border:1px solid #7dabdf;}
+.login-box .captcha-con img{height:42px; margin-left:20px;}
+.next-day{color:#333; font-size:14px; float:left;}
+.login-checkbox{vertical-align:top; margin-right:5px;}
+.login-rem a{color:#2075b7; font-size:14px; float:right;}
+.login-box .login-btn{width:100%; background-color:#ef3838; font-size:14px; color:#fff; line-height:40px; border-radius:5px; -moz-border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px; margin-top:20px; cursor:pointer;}
+.login-box .login-btn:hover{background-color:#f94d4d;}
+.quick{color:#777777; font-size:14px; margin-top:30px;}
+.quick .quick-list{margin-top:15px; width:100%;}
+.quick .quick-list a{width:36px; height:36px; display:inline-block; border-radius:100%; -moz-border-radius:100%; -o-border-radius:100%; -webkit-border-radius:100%; margin-right:15px;}
+.
+.inf-message{position:absolute; top:80px;font-size: 12px;color: #F00;}
+
+.header-r .login-user{float:left; line-height:30px; margin-left:20px; padding-right:14px; color:#979797; font-size:12px; position:relative; cursor:pointer;}
+.header-r .login-user a{z-index:4; position:relative; display:inline-block;}
+.header-r .login-user img{width:30px; height:30px; float:left; margin-right:5px; border-radius:100%; -moz-border-radius:100%; -o-border-radius:100%; -webkit-border-radius:100%;}
+.user-child{display:none; top:15px; width:100%; background-color:rgba(255,255,255,0.9); position:absolute; padding:16px 0 8px; z-index:3; box-shadow:0 2px 5px rgba(34,25,25,.4); -moz-box-shadow:0 2px 5px rgba(34,25,25,.4); -webkit-box-shadow:0 2px 5px rgba(34,25,25,.4);}
+.header-r .login-user:hover .user-child{display:block;}
+.user-child a{width:100%; display:block; line-height:24px; text-align:center; font-size:14px;}
+
+.quick-list img{display:none;}
+
+
+
+
+
+
+/*娉ㄥ唽*/
+.register-box{width:560px; height:430px; padding:30px 50px 56px 50px; background-color:#fff; margin:70px auto; border-radius:12px; -moz-border-radius:12px; -o-border-radius:12px; -webkit-border-radius:12px; box-shadow:0px 0px 9px #ccc; -webkit-box-shadow:0px 0px 9px #ccc; -moz-box-shadow:0px 0px 9px #ccc;}
+.register-nav{position:relative; border-bottom:1px solid #f0f0f0; padding-bottom:10px;}
+.register-nav span{color:#333; font-size:20px; position:relative; display:inline-block; padding:0 5px;}
+.register-nav span:before{position:absolute; content:""; left:0; bottom:-11px; width:100%; height:2px; background-color:#ef3838; }
+.register-login{position:absolute; right:0; bottom:10px; font-size:14px; color:#333;}
+.register-login a{color:#368cf6;}
+.register-list{padding-left:81px; padding-top:10px;}
+.register-list li{margin-top:28px; line-height:36px; color:#333; font-size:16px;}
+.register-list li span{width:90px; line-height:36px; display:inline-block;}
+.register-list .register-input{line-height:36px; height:36px; width:306px; box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box; -webkit-box-sizing:border-box; border:1px solid #b5b5b5; border-radius:5px; -moz-border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px; box-shadow:inset 0 -1px rgba(34,25,25,.15),0 -1px rgba(255,255,255,.8); -moz-box-shadow:inset 0 -1px rgba(34,25,25,.15),0 -1px rgba(255,255,255,.8); -webkit-box-shadow:inset 0 -1px rgba(34,25,25,.15),0 -1px rgba(255,255,255,.8); text-indent:10px; font-size:13px;}
+.register-list .register-input:focus{border:1px solid #7dabdf;}
+.register-list .register-code{width:160px;}
+.code-img{width:108px; height:36px; margin-left:20px; display:inline-block;}
+.code-img img{height:100%; width:100%;}
+.register-list .register-checkbox{width:12px; height:12px; vertical-align:middle; margin-right:10px; margin-left:90px;}
+.register-list .register-txt{color:#444; font-size:14px; margin-top:10px;}
+.register-list .register-txt a{color:#368cf6;}
+.register-list .register-btn input{color:#fff; font-size:16px; line-height:36px; height:36px; width:306px; border-radius:5px; -moz-border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px; background-color:#ef3838; margin-left:90px; cursor:pointer;}
+.register-list .register-btn input:hover{background-color:#f94d4d;}
+.register-list li label{font-size:12px; color:#f00; width:100%;}
+
+/*寰俊鐧诲綍鎺堟潈*/
+.bind-now{width:100%; margin-top:30px; margin-bottom:10px; font-size:14px; color:#24a5ff;}
+.bind-list{padding:0;}
+.bind-list li{margin-top:10px;}
+.bind-list li span{font-size:14px; width:60px;}
+.bind-list .register-input{width:288px;}
+.bind-list .register-btn input{width:288px; margin-left:60px;}
+.register-list .register-btn input.bind-bd{background-color:#24a5ff;}
+.bind-line{width:100%; height:1px; border-bottom: 1px solid #d7d7d7; margin-top:30px;}
+

@@ -1,0 +1,1116 @@
+@charset "UTF-8";
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{  /* chrome */
+
+    -webkit-appearance: none!important;
+    margin: 0;
+}
+input[type="number"]{
+    -moz-appearance:textfield; /*Firefox*/
+}
+body{
+    font-family: "Microsoft YaHei";
+}
+.clearfix{
+    clear: both;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+/*头部区域*/
+#header{
+    width: 100%;
+    height: 36px;
+    background-color: #d8d8d8;
+}
+.headerbox{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.headerbox ul li:hover a{
+    color: #c70000 !important;
+}
+.header_left{
+    float: left;
+}
+.header_right{
+    float: right;
+}
+.header_left ul li,.header_right ul li{
+    font-size: 12px;
+    height: 36px;
+    line-height: 36px;
+}
+.header_left ul li a{
+    font-size: 12px;
+    height: 36px;
+    line-height: 36px;
+    color: #666;
+}
+.header_left ul li a:hover{
+    cursor:pointer;
+}
+.header_left ul li{
+    float: left;
+    margin-right: 12px;
+}
+.header_left ul li:hover{
+
+}
+.header_left ul li:first-child{
+    margin-right: 8px;
+}
+.header_right ul li{
+    float: left;
+    margin-left: 12px;
+}
+.header_right ul li a{
+    font-size: 12px;
+    height: 36px;
+    line-height: 36px;
+    color: #666;
+}
+.header_left .regi a{
+    color: #dd0000;
+}
+.carticon{
+    padding-left: 16px;
+    background: url(../images/carticon.png) no-repeat left center;
+}
+/*内容区域*/
+#content{
+    width: 100%;
+}
+.contenttop{
+    width: 100%;
+    background-color: #f5f5f5;
+}
+.contentcon{
+    width: 100%;
+    background-color: #fff;
+}
+#content .contenttopbox,#content .contentconbox{
+    width: 1200px;
+    margin:0 auto;
+}
+.search{
+    width: 100%;
+    height: 70px;
+    padding: 36px 0 20px;
+}
+.search .logo{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    padding-top: 10px;
+}
+.searchbox{
+    float: left;
+    margin: 0 25px;
+}
+.searchcon{
+    height: 40px;
+    width: 636px;
+}
+.indexsearch{
+    width: 726px!important;
+}
+.indexinp {
+    width: 616px!important;
+}
+.searchcon .searchtxt{
+    float: left;
+    width: 526px;
+    height: 40px;
+    border:none;
+    outline: none;
+    border:1px solid #c70000;
+    padding-left: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    color: #999;
+}
+.searchcon .searchbtn{
+    float: left;
+    width: 110px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #c70000;
+    border:none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.mycart{
+    position: relative;
+    float: right;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 16px;
+    border:1px solid #d8d8d8;
+}
+.mycart a{
+    color: #c70000;
+}
+.mycart>span{
+    position: absolute;
+    top: 4px;
+    right: 28px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #e9474e;
+    font-size: 12px;
+    line-height: 16px;
+    color: #fff;
+}
+/*购物车下拉*/
+.mycart .cartitem{
+    display: none;
+    position: absolute;
+    top: 36px;
+    right: -1px;
+    width: 316px;
+    background-color: #fff;
+    padding-left: 12px;
+    box-sizing: border-box;
+    z-index: 299;
+    box-shadow: 0 3px 4px #eaeaea;
+}
+.mycart .cartitem>p{
+    font-size: 12px;
+    color: #333;
+    text-align: left;
+    margin:10px 0;
+}
+.mycart .cartitem>p.allnum{
+    float: left;
+    margin-left: 2px;
+    line-height:52px;
+}
+.mycart .cartitem ul{
+    height: 300px;
+    overflow-y:auto;
+}
+.mycart .cartitem ul li{
+    height: 70px;
+    margin-bottom: 12px;
+}
+.mycart .cartitem ul li img{
+    width: 55px;
+    height: 70px;
+    float: left;
+}
+.mycart .cartitem ul li .itemtxt{
+    float: left;
+    margin-left: 6px;
+}
+
+.mycart .cartitemnone img {
+    float: left;
+    width: 50px;
+    margin: 25px 0 25px 10px;
+}
+.mycart .cartitemnone {
+    height: 100px;
+}
+.mycart .cartitemnone span {
+    display: block;
+    color: #ccc;
+    height: 100px;
+    line-height: 100px;
+    font-size: 14px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.itemtxt span.shopdelete:hover{
+    color:#c70000;
+}
+.itemtxt span.shopdelete{
+    cursor: pointer;
+}
+.cartitem .gocart{
+    border:none;
+    outline: none;
+    float: right;
+    width: 92px;
+    height: 30px;
+    margin: 20px 24px 20px 0;
+    background-color: #e4393c;
+    color:#fff;
+    cursor: pointer;
+}
+.itemtxt p{
+    width: 220px;
+    font-size: 10px;
+    color: #666;
+    line-height: 20px;
+    text-align: left;
+    cursor: pointer;
+}
+.itemtxt p:hover{
+    color: #c70000;
+}
+.itemtxt span{
+    width: 72px;
+    display: inline-block;
+    position: relative;
+    bottom: 0;
+}
+.itemtxt span:first-of-type{
+    text-align: left;
+    font-size: 14px;
+    color: #e4393c;
+    font-family:Arial;
+}
+.itemtxt span:nth-of-type(2){
+    font-size: 12px;
+    color: #666;
+}
+.itemtxt span:nth-of-type(3){
+    font-size: 12px;
+    color: #333;
+}
+.pop{
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+}
+.pop span,.pop ul{
+    float: left;
+    color: #999;
+}
+.pop ul li{
+    float: left;
+    margin: 0 15px;
+}
+.pop ul li a{
+    color: #999;
+    cursor:pointer;
+}
+.pop ul li a:hover{
+    color: #c70000;
+}
+.popactive{
+    color: #c70000;
+}
+/*导航*/
+.nav{
+    position: relative;
+    height: 40px;
+}
+.nav>span{
+    float: left;
+    width: 206px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #c70000;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: #fff;
+    padding-left: 10px;
+}
+.nav>span a{
+    color: #fff;
+}
+.nav i{
+    width: 24px;
+    height: 20px;
+    display: inline-block;
+    margin:0 6px;
+    vertical-align: middle;
+    background: url(../images/kindsicon.png) no-repeat center 0;
+    background-size:85%;
+}
+
+/*隐藏显示商品分类*/
+.nav .navitem{
+    display: none;
+    position: absolute;
+    height: 480px;
+    top: 40px;
+    left: 0px;
+    width: 940px;
+    z-index: 199;
+}
+.nav .itemleft{
+    float: left;
+    background-color: #a30111;
+    height: 100%;
+}
+.nav .itemleft>ul>li{
+    width: 206px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 12px;
+}
+.nav .itemleft>ul>li>a{
+    padding-left: 22px;
+    display: block;
+    color: #fff;
+}
+.nav .itemleft>ul>li>a.navred{
+    background-color: #fff;
+    color: #c70000;
+}
+/*itembox*/
+.nav .itemleft .itembox{
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    left: 206px;
+    width: 800px;
+    min-height:480px;
+    background-color: #f4f4f4;
+}
+.itembox div{
+    height: 35px;
+    width: 100%;
+}
+.itembox div span{
+    float: left;
+    width: 80px;
+    text-align: center;
+    line-height: 34px;
+    font-size: 12px;
+    color: #333;
+    font-weight: bold;
+}
+.itembox div span a{
+    color: #333;
+}
+.itembox div ul{
+    width: 675px;
+    height: 100%;
+    margin-left: 80px;
+    line-height: 34px;
+    border-bottom: 1px solid #eaeaea;
+}
+.itembox div ul li{
+    float: left;
+    font-size: 12px;
+    margin-right: 20px;
+}
+.itembox div ul li a{
+    color: #4a4a4a;
+}
+.itembox div ul li a:hover{
+    color: #c70000;
+}
+
+
+.nav>ul{
+    float: left;
+    padding-left: 15px;
+}
+.nav>ul>li{
+    float: left;
+    line-height: 40px;
+    font-size: 16px;
+    margin: 0 10px;
+}
+.nav>ul>li a{
+    color: #333;
+}
+.nav>ul>li a:hover{
+    color: #c70000;
+}
+.line{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    z-index: 200;
+    background-color: #c70000;
+}
+/*contentcon*/
+.contentconbox .guide{
+    overflow: auto;
+}
+.guideleft{
+    padding:24px 0;
+    font-size: 16px;
+    color: #333;
+}
+.guideleft a{
+    color: #333;
+}
+.guideleft a:hover{
+    color: #c70000;
+}
+.guideright{
+    padding:24px 0;
+    font-size: 14px;
+}
+.guideleft span{
+    color: #c70000;
+}
+.guideright span{
+    color: #c70000;
+    font-size: 14px;
+    margin:0 8px;
+}
+.brand{
+    width: 100%;
+    border: 1px solid #cfcfcf;
+}
+.phone{
+    width: 100%;
+}
+.phonebrand>li{
+    width: 100%;
+    border: 1px solid #f5f5f5;
+    margin-top: 8px;
+}
+/* .phonebrand>li:last-child{
+	border-bottom:none;
+} */
+.phonebrand .manbrand label{
+    cursor: pointer;
+}
+.phonebrand .manbrand label:hover{
+    color: #c70000;
+}
+.manbrand{
+    display: table;
+}
+.manbrand>li{
+    display: table-cell;
+    vertical-align: middle;
+}
+.manbrand .tag{
+    width: 85px;
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 14px;
+    vertical-align: top;
+    padding: 10px 0 0 14px;
+    box-sizing: border-box;
+}
+.manbrand .tagcen{
+    width: 85px;
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+}
+.manbrand .tagdetail{
+    width: 800px;
+    margin-left: 12px;
+    padding: 6px 135px 6px 15px;
+}
+.tagdetail ul li{
+    float: left;
+    width: 220px;
+    height: 20px;
+    line-height: 20px;
+    margin: 6px;
+}
+.tagdetail img{
+    float: left;
+    width: 100px;
+    height: 40px;
+    border: 2px solid #f5f5f5;
+    margin: 2px 6px 2px 0;
+    cursor: pointer;
+    padding:9px;
+    box-sizing:border-box;
+}
+.tagdetail img.tagcheckborder{
+    border:2px solid #c70000;
+}
+.tagdetail label.tagcheck{
+    color:#c70000;
+}
+.tagdetail img:hover{
+    border:2px solid #c70000;
+}
+.tagdetail div{
+    position: relative;
+    width: 102px;
+    height: 42px;
+    display: inline-block;
+}
+.brand .tagdetail div i,.phone .tagdetail div i{
+    display: none;
+    position: absolute;
+    top: 3px;
+    right: -3px;
+    width: 12px;
+    height: 12px;
+    background: url(../images/boxdesc.png) no-repeat center;
+}
+.manbrand .tagedit{
+    width: 295px;
+    padding-right: 10px;
+    text-align: right;
+}
+.tagedit span{
+    color: #333;
+    font-size: 12px;
+    cursor: pointer;
+    margin: 0 18px 0 6px;
+}
+.tagedit span:hover{
+    color: #c70000;
+}
+.tagedit input{
+    display: none;
+    border: none;
+    outline: none;
+    width: 54px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    margin-left: 20px;
+    font-size: 12px;
+    color: #666;
+    border: 1px solid #999;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.tagedit .editactive,.select .editactive,.editsure,.editcan{
+    background-color:#e9474e;
+    color: #fff;
+    border: 1px solid #e9474e;
+}
+.tagedit button{
+    float: left;
+    margin-left: 0;
+    margin-right: 10px;
+}
+.tagedit .editsure{
+    border:none;
+    outline: none;
+    background-color: #e9474e;
+    color: #fff;
+}
+.select{
+    margin: 22px 0;
+}
+.select ul li{
+    float: left;
+    border:1px solid #ccc;
+    padding: 8px;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+    border-right:none;
+}
+.select ul li:last-child{
+    border-right:1px solid #ccc;
+}
+.select ul li.selall{
+    background-color: #fa3a3a;
+    color: #fff;
+    border: 1px solid #fa3a3a;
+}
+.select ul li:not(.selall):hover{
+    color: #c70000;
+}
+.select ul li:nth-child(2) i{
+    width: 10px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../images/downicon.png) no-repeat 2px 2px;
+}
+.select ul li:nth-child(3) i{
+    width: 10px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../images/downicon.png) no-repeat 2px 2px;
+}
+/*.select ul li:nth-child(4) i{
+	width: 10px;
+	height: 16px;
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/priceicon.png) no-repeat 2px 2px;
+}*/
+.jiage{
+    position:relative;
+    padding-right:18px!important;
+}
+.jiage .pup{
+    position:absolute;
+    top:11px;
+    width: 10px;
+    height: 8px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../images/priceiconup.png) no-repeat 2px 2px;
+}
+.jiage1 .pup{
+    position:absolute;
+    top:11px;
+    width: 10px;
+    height: 8px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../images/priceiconup1.png) no-repeat -1px 1px;
+}
+.jiage .pdown{
+    position:absolute;
+    top:17px;
+    width: 10px;
+    height: 8px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../images/priceicondown.png) no-repeat 2px 2px;
+}
+.jiage2 .pdown{
+    position:absolute;
+    top:17px;
+    width: 10px;
+    height: 8px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../images/priceicondown1.png) no-repeat -1px 2px;
+}
+
+.select input:first-of-type{
+    padding: 9px 0 9px 22px;
+}
+.select input{
+    font-size: 14px;
+    color: #666;
+    width: 64px;
+    border:1px solid #ccc;
+    padding: 9px 0 9px 22px;
+}
+.priceinput{
+    position: relative;
+    display: inline-block;
+}
+.priceinput em{
+    position: absolute;
+    top: 6px;
+    left: 110px;
+    color: #999;
+}
+.priceinput>span{
+    position: relative;
+    top: 1px;
+    left: 28px;
+    color: #666;
+}
+.select button:first-of-type{
+    margin-left: 13px;
+}
+.select button,.tagedit button{
+    outline: none;
+    width: 54px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    margin-left: 12px;
+    font-size: 12px;
+    color: #666;
+    border: 1px solid #999;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.tagedit button[type="button"]:hover{
+    background-color:#e9474e;
+    color:#fff;
+    border:1px solid #e9474e;
+}
+/*.tagdetail a{
+	display: inline-block;
+	margin-right: 40px;
+	font-size: 14px;
+	color: #1b4695;
+}*/
+.tagdetail label{
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 14px;
+    color: #1b4695;
+}
+/*热卖*/
+.hotsale{
+    position: relative;
+    width: 100%;
+    background-color: #f1f1f1;
+    margin:40px 0 30px;
+}
+.hotsale>img,.hotsale ul{
+    display: inline-block;
+}
+.hotsale>img{
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+.hotsale ul{
+    margin-left: 85px;
+}
+.hotsale ul li{
+    width: 240px;
+    height: 130px;
+    padding: 27px 0;
+    float: left;
+    margin-right: 38px;
+}
+.hotsale ul li img{
+    float: left;
+    width: 132px;
+    height: 132px;
+}
+.hotsale li .hottitle{
+    position: relative;
+    margin-left: 140px;
+    height: 100%;
+}
+.hotsale ul li p{
+    font-size: 12px;
+}
+.hotsale ul li p a{
+    display: block;
+    color: #4b4b4b;
+}
+.hotsale ul li p:hover a{
+    color: #c70000;
+}
+span.price{
+    display: block;
+    font-size: 14px;
+    color: #c70000;
+}
+span.pricepos{
+    position: absolute;
+    bottom: 30px;
+}
+span.view{
+    display: block;
+    font-size: 12px;
+    color: #666;
+}
+span.view i{
+    width: 15px;
+    height: 9px;
+    display: inline-block;
+    background: url(../images/viewicon.png) no-repeat center;
+    margin-right: 5px;
+}
+span.viewpos{
+    position: absolute;
+    bottom: 0;
+}
+.prenum {
+    margin-top: 24px;
+    font-size: 12px;
+    color: #333;
+}
+.prenum  .preadd{
+    font-style: normal;
+    background: #ccc;
+    padding: 0 4px;
+    color: #c70000;
+    margin-right: 8px;
+}
+.prenum1 {
+    position:absolute;
+    top:96px;
+    left:10px;
+    margin-top: 24px;
+    font-size: 12px;
+    color: #333;
+}
+.prenum1  .preadd{
+    font-style: normal;
+    background: #ccc;
+    padding: 0 4px;
+    color: #c70000;
+    margin-right: 8px;
+}
+/*衣服展示*/
+.clothes{
+    width: 100%;
+}
+.clothesbox li{
+    float: left;
+    width: 265px;
+    height: 400px;
+    margin-right: 36px;
+    margin-bottom: 30px;
+    border: 1px solid #fff;
+    padding: 3px 3px 12px 3px;
+}
+.clothesbox li:hover{
+    border: 1px solid #c70000;
+    cursor: pointer;
+}
+.clothesbox li:nth-child(4n){
+    margin-right: 0;
+}
+.clothes .clothpic{
+    width: 265px;
+    height: 248px;
+    margin-top:12px;
+    overflow: hidden;
+}
+.clothes .clothpic>img{
+    width: 100%;
+    padding:0 12px;
+    box-sizing:border-box;
+}
+.clothtxt .price{
+    font-size: 20px;
+    margin:10px 0;
+}
+.clothes .clothtxt{
+    position: relative;
+    padding: 0px 10px;
+}
+.clothes .clothtxt p{
+    font-size: 14px;
+    color: #080808;
+    margin-bottom: 10px;
+    height: 39px;
+}
+.clothtxt span{
+    display: inline-block;
+}
+.clothtxt span.origin{
+    position: absolute;
+    left: 11px;
+    font-size: 12px;
+    color: #333;
+}
+.clothtxt span.view{
+    position: absolute;
+    right: 11px;
+    font-size: 12px;
+    color: #fc762c;
+}
+
+.storeicon{
+    display:inline-block;
+    width:16px;
+    height:20px;
+    vertical-align:middle;
+    margin-right:6px;
+    background:url(../images/store-market-stall.png) no-repeat center;
+}
+
+.clothpage{
+    float: right;
+    margin:40px 0 70px;
+    font-size: 14px;
+}
+.pagenum{
+    float: left;
+}
+.pagenum button,.pagenum .pageul{
+    float: left;
+}
+.pagenum .pageul{
+    width: 221px;
+    height: 30px;
+    overflow: hidden;
+}
+.pagenum .pageul ul{
+    height: 100%;
+}
+.pagenum ul li,.clothpage span input{
+    width: 26px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    vertical-align: middle;
+    margin-right:10px;
+    color: #666;
+    border: 1px solid #b2b2b2;
+    background-color: #eee;
+}
+.pagenum ul li{
+    float: left;
+}
+.clothpage span input{
+    display: inline-block;
+}
+.pagenum ul li:hover{
+    color: #c70000;
+}
+.pagenum ul li.currentpage{
+    border:1px solid #ff2311;
+    color: #fff;
+    background-color: #ff2311;
+}
+.pagenum ul li{
+    cursor: pointer;
+}
+.clothpage span input{
+    margin: 0 6px;
+}
+.pagenum button{
+    border:none;
+    outline:none;
+    width: 72px;
+    height: 30px;
+    text-align: center;
+    color: #666;
+    background-color: #fff;
+    border: 1px solid #b2b2b2;
+    cursor: pointer;
+}
+.pagenum button.unable{
+    border: 1px solid #d9d9d9;
+    color: #999;
+}
+.pagenum button.lastpage{
+    padding-right: 10px;
+    margin-right: 13px;
+}
+.pagenum button.nextpage{
+    padding-left: 10px;
+    margin-left: 10px;
+}
+.clothpage span{
+    margin-left: 15px;
+    height: 30px;
+    line-height: 30px;
+    color: #666;
+}
+.clothpage span em{
+    font-style: normal;
+}
+.clothpage>button{
+    width: 50px;
+    height: 30px;
+    margin-left: 16px;
+    color: #333;
+    border: 1px solid #b2b2b2;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/*底部区域*/
+#footer{
+    width: 100%;
+    height:330px;
+    background-color: #080808;
+}
+#footer .footerbox{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.foottop ul{
+    padding: 20px 0;
+    height: 50px;
+}
+.foottop ul li{
+    float: left;
+    width:33%;
+    text-align: center;
+}
+.foottop ul li:first-child{
+    padding:0 200px 0 20px;
+    box-sizing:border-box;
+}
+.foottop ul li:last-child{
+    padding:0 20px 0 200px;
+    box-sizing:border-box;
+}
+.foottop ul li p{
+    font-size: 20px;
+    color: #fff;
+}
+.foottop ul li span{
+    font-size: 14px;
+    color: #c70000;
+}
+.footcon{
+    height: 200px;
+}
+.footleft{
+    float: left;
+    width: 66%;
+    margin-right: 50px;
+}
+.footright{
+    float: right;
+}
+.footright>img{
+    width: 130px;
+    height: 130px;
+}
+.footleft>ul{
+    height: 30px;
+    border-bottom: 1px solid #373737;
+}
+.footleft>ul>li{
+    width: 70px;
+    height: 30px;
+    float: left;
+    color: #fff;
+    margin-right: 110px;
+}
+.footleft>ul>li:last-child{
+    margin-right: 0;
+}
+.footleft>ul>li ul{
+    position: relative;
+    top: 8px;
+}
+.footleft>ul>li ul li{
+    width: 112px;
+    font-size: 14px;
+    margin:8px 0;
+}
+.footleft>ul>li ul li a{
+    color: #666;
+}
+.footright .contact{
+    float: right;
+}
+.footright p,.footright span{
+    display: block;
+    text-align: right;
+}
+.footright p{
+    font-size: 20px;
+    color: #fff;
+}
+.footright .contact{
+    margin-left: 38px;
+}
+.contact span.time{
+    font-size: 14px;
+    color: #666;
+}
+.contact span.tel{
+    font-size: 20px;
+    color: #c70000;
+    margin-top: 12px;
+}
+.footerbox .copyright{
+    color: #1c1c1c;
+    text-align: center;
+    margin: 12px 0;
+    font-size: 12px;
+}

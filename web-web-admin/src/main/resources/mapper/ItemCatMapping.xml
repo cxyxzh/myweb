@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xzh.web.web.admin.dao.ItemCatDao">
+    <sql id="content">
+	a.id,
+	a.name,
+	a.status,
+	a.sortOrder,
+	a.isParent,
+	a.created,
+	a.updated,
+	IFNULL(b.id,'0')AS "parentItemCat.id",
+	IFNULL(b.name,'/') AS "parentItemCat.name"
+    </sql>
+    <sql id="joins">
+	tb_item_cat AS a LEFT JOIN tb_item_cat AS b ON a.parentId = b.id
+    </sql>
+
+    <select id="selectAllParent" resultType="ItemCat">
+      SELECT
+          id,
+          NAME
+      FROM
+          tb_item_cat
+      WHERE
+          parentId = 0
+      LIMIT 0,13
+
+    </select>
+    <select id="selectByParent" resultType="ItemCat">
+        SELECT
+            id,
+            name,
+            status,
+            sortOrder,
+            isParent,
+            created,
+            updated
+        FROM
+          tb_item_cat
+        WHERE
+          parentId = #{parentId}
+    </select>
+    <select id="selectById" resultType="ItemCat">
+        SELECT
+        <include refid="content"></include>
+	    FROM
+        <include refid="joins"></include>
+	    WHERE
+	          a.id=#{id}
+    </select>
+    <select id="selectAllCategory" resultType="ItemCat">
+        SELECT
+        <include refid="content"></include>
+        FROM
+        <include refid="joins"></include>
+        ORDER BY
+        b.id,isParent,sortOrder
+
+    </select>
+    <insert id="insert">
+
+    INSERT INTO tb_item_cat
+	(
+	parentId,
+	NAME,
+	STATUS,
+	sortOrder,
+	isParent,
+	created,
+	updated
+	)
+	VALUES
+	(
+	#{parentItemCat.id},
+	#{name},
+	#{status},
+	#{sortOrder},
+	#{isParent},
+	#{created},
+	#{updated}
+	)
+    </insert>
+    <update id="update">
+
+
+UPDATE tb_item_cat
+	SET
+
+	parentId = 	#{parentItemCat.id},
+	NAME =#{name},
+	sortOrder = #{sortOrder},
+	isParent = #{isParent},
+	updated = #{updated}
+
+	WHERE
+	id =#{id} ;
+    </update>
+</mapper>

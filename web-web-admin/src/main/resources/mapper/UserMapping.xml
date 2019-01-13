@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xzh.web.web.admin.dao.UserDao">
+    <sql id="selectContent">
+          id,
+          username,
+          password,
+          phone,
+          email,
+          created,
+          updated
+    </sql>
+    <select id="count" resultType="java.lang.Integer">
+        SELECT
+          COUNT(*)
+        FROM
+          tb_user
+        <where>
+            <if test="username!=null and username!=''">
+                AND username LIKE CONCAT('%',#{username},'%')
+            </if>
+            <if test="phone!=null and phone!=''">
+                AND phone LIKE CONCAT('%',#{phone},'%')
+            </if>
+            <if test="email!=null and email!=''">
+                AND email LIKE CONCAT('%',#{email},'%')
+            </if>
+        </where>
+
+    </select>
+    <select id="selectById" resultType="User">
+        SELECT
+        <include refid="selectContent"/>
+        FROM
+        tb_user as a
+        WHERE
+        id=#{id}
+    </select>
+    <select id="selectPasswordByUsername" resultType="User">
+    SELECT
+        <include refid="selectContent"/>
+	FROM
+	    tb_user as a
+	WHERE
+	    username=#{username}
+    </select>
+
+    <select id="selectByPage" parameterType="java.util.Map" resultType="User">
+      SELECT
+        <include refid="selectContent"/>
+      FROM
+          tb_user
+        <where>
+            <if test="user.username!=null and user.username!=''">
+                AND username LIKE CONCAT('%',#{user.username},'%')
+            </if>
+            <if test="user.phone!=null and user.phone!=''">
+                AND phone LIKE CONCAT('%',#{user.phone},'%')
+            </if>
+            <if test="user.email!=null and user.email!=''">
+                AND email LIKE CONCAT('%',#{user.email},'%')
+            </if>
+        </where>
+      LIMIT #{start},#{length}
+    </select>
+    <select id="selectByName" resultType="User">
+        SELECT
+          id
+        FROM
+          tb_user
+        WHERE username=#{username}
+    </select>
+    <insert id="insert">
+
+        INSERT INTO tb_user
+        (
+        username,
+        PASSWORD,
+        email,
+        created,
+        updated
+        )
+        VALUES
+        (
+        #{username},
+        #{password},
+        #{email},
+        #{created},
+        #{updated}
+        )
+    </insert>
+    <update id="update">
+     UPDATE tb_user
+	SET
+
+	username = #{username} ,
+	PASSWORD = #{password} ,
+	phone = #{phone} ,
+	email = #{email}
+
+
+	WHERE
+	id = #{id}
+    </update>
+    <delete id="deleteById">
+      DELETE
+      FROM
+      tb_user
+      WHERE id  IN
+        <foreach collection="array" open="(" close=")" item="id" separator=",">
+            #{id}
+        </foreach>
+    </delete>
+</mapper>
